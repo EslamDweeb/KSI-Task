@@ -6,9 +6,13 @@
 //
 
 import UIKit
+import Kingfisher
 
-class ProductCell: UICollectionViewCell {
-
+protocol ProductCellViewModel{
+    func configurationCeLl(name:String,description:String,price:String,imageUrl:String)
+}
+class ProductCell: UICollectionViewCell,ProductCellViewModel {
+    
     @IBOutlet weak var ProductPriceLbl: UILabel!
     @IBOutlet weak var productDescLbl: UILabel!
     @IBOutlet weak var ProductNameLbl: UILabel!
@@ -19,7 +23,13 @@ class ProductCell: UICollectionViewCell {
         super.awakeFromNib()
         contentView.borderColor = .Gray6
         contentView.borderWidth = 2
+        contentView.cornerRadius = 15
         faveBtn.tintColor = .black
     }
-
+    func configurationCeLl(name:String,description:String,price:String,imageUrl:String){
+        ProductNameLbl.text  = name
+        productDescLbl.text = description
+        ProductPriceLbl.text = price
+        productImageView.kf.setImage(with: URL(string: imageUrl))
+    }
 }

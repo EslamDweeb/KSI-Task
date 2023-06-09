@@ -16,10 +16,11 @@
 		C31932D72A3360190042546B /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C31932D12A3360190042546B /* Montserrat-Light.ttf */; };
 		C31932DA2A3362E10042546B /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31932D82A3362E10042546B /* ProductCell.swift */; };
 		C31932DB2A3362E10042546B /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C31932D92A3362E10042546B /* ProductCell.xib */; };
-		C31932E02A33670F0042546B /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31932DE2A33670E0042546B /* RequestProtocol.swift */; };
 		C31932E12A33670F0042546B /* RequestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31932DF2A33670E0042546B /* RequestClient.swift */; };
 		C31932E62A3367C50042546B /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31932E52A3367C50042546B /* HomeRouter.swift */; };
 		C31932E82A3367D00042546B /* HomeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31932E72A3367D00042546B /* HomeClient.swift */; };
+		C31932EB2A336FBE0042546B /* ProductListDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31932EA2A336FBE0042546B /* ProductListDTO.swift */; };
+		C31932F02A3370080042546B /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31932EF2A3370080042546B /* ProductList.swift */; };
 		C373C1312A32078B00C1D782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C373C1302A32078B00C1D782 /* AppDelegate.swift */; };
 		C373C13A2A32078D00C1D782 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C373C1392A32078D00C1D782 /* Assets.xcassets */; };
 		C373C13D2A32078D00C1D782 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C373C13B2A32078D00C1D782 /* LaunchScreen.storyboard */; };
@@ -59,6 +60,16 @@
 		C38D8DE42A33506B00F0A786 /* FavouriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38D8DE22A33506B00F0A786 /* FavouriteVC.swift */; };
 		C38D8DE52A33506B00F0A786 /* FavouriteVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C38D8DE32A33506B00F0A786 /* FavouriteVC.xib */; };
 		C38D8DE72A33508500F0A786 /* FavouriteVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38D8DE62A33508500F0A786 /* FavouriteVCViewModel.swift */; };
+		C3BB31002A33734700C4E599 /* HomeRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB30FB2A33734700C4E599 /* HomeRepo.swift */; };
+		C3BB310D2A33739C00C4E599 /* DefaultHomeRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB31082A33739C00C4E599 /* DefaultHomeRepo.swift */; };
+		C3BB312A2A3374F800C4E599 /* GetProductListUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB31102A3374F800C4E599 /* GetProductListUsecase.swift */; };
+		C3BB31422A337BE300C4E599 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C3BB31412A337BE300C4E599 /* Kingfisher */; };
+		C3BB31442A337FC300C4E599 /* TargetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB31432A337FC300C4E599 /* TargetProtocol.swift */; };
+		C3BB31472A3386B900C4E599 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = C3BB31462A3386B900C4E599 /* Realm */; };
+		C3BB31492A3386B900C4E599 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C3BB31482A3386B900C4E599 /* RealmSwift */; };
+		C3BB314D2A33877600C4E599 /* ProductListLDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB314C2A33877600C4E599 /* ProductListLDB.swift */; };
+		C3BB31502A3387A800C4E599 /* ProductLDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB314F2A3387A800C4E599 /* ProductLDB.swift */; };
+		C3BB31552A339B7900C4E599 /* ProductListLDBCLient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB31542A339B7900C4E599 /* ProductListLDBCLient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,10 +82,11 @@
 		C31932D12A3360190042546B /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		C31932D82A3362E10042546B /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		C31932D92A3362E10042546B /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
-		C31932DE2A33670E0042546B /* RequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
 		C31932DF2A33670E0042546B /* RequestClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestClient.swift; sourceTree = "<group>"; };
 		C31932E52A3367C50042546B /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		C31932E72A3367D00042546B /* HomeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeClient.swift; sourceTree = "<group>"; };
+		C31932EA2A336FBE0042546B /* ProductListDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListDTO.swift; sourceTree = "<group>"; };
+		C31932EF2A3370080042546B /* ProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
 		C373C12D2A32078B00C1D782 /* KSI-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KSI-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C373C1302A32078B00C1D782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C373C1392A32078D00C1D782 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -112,6 +124,13 @@
 		C38D8DE22A33506B00F0A786 /* FavouriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteVC.swift; sourceTree = "<group>"; };
 		C38D8DE32A33506B00F0A786 /* FavouriteVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteVC.xib; sourceTree = "<group>"; };
 		C38D8DE62A33508500F0A786 /* FavouriteVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteVCViewModel.swift; sourceTree = "<group>"; };
+		C3BB30FB2A33734700C4E599 /* HomeRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRepo.swift; sourceTree = "<group>"; };
+		C3BB31082A33739C00C4E599 /* DefaultHomeRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultHomeRepo.swift; sourceTree = "<group>"; };
+		C3BB31102A3374F800C4E599 /* GetProductListUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetProductListUsecase.swift; sourceTree = "<group>"; };
+		C3BB31432A337FC300C4E599 /* TargetProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetProtocol.swift; sourceTree = "<group>"; };
+		C3BB314C2A33877600C4E599 /* ProductListLDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListLDB.swift; sourceTree = "<group>"; };
+		C3BB314F2A3387A800C4E599 /* ProductLDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductLDB.swift; sourceTree = "<group>"; };
+		C3BB31542A339B7900C4E599 /* ProductListLDBCLient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListLDBCLient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,10 +138,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3BB31472A3386B900C4E599 /* Realm in Frameworks */,
 				C38D8DB02A334BC700F0A786 /* RxSwift in Frameworks */,
+				C3BB31492A3386B900C4E599 /* RealmSwift in Frameworks */,
 				C38D8DAE2A334BC700F0A786 /* RxCocoa in Frameworks */,
 				C38D8DC42A334DF000F0A786 /* MBProgressHUD in Frameworks */,
 				C38D8DAB2A334BA800F0A786 /* Alamofire in Frameworks */,
+				C3BB31422A337BE300C4E599 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,8 +172,8 @@
 		C31932DD2A33670E0042546B /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				C31932DE2A33670E0042546B /* RequestProtocol.swift */,
 				C31932DF2A33670E0042546B /* RequestClient.swift */,
+				C3BB31432A337FC300C4E599 /* TargetProtocol.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -159,7 +181,8 @@
 		C31932E22A3367180042546B /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				C31932DC2A33670E0042546B /* Network */,
+				C3BB314B2A33874300C4E599 /* Apis */,
+				C3BB314A2A33873900C4E599 /* LCDB */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -167,6 +190,9 @@
 		C31932E32A3367280042546B /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				C3BB310E2A3374F800C4E599 /* UseCases */,
+				C3BB30F82A33734700C4E599 /* Repositories */,
+				C31932EE2A336FFC0042546B /* Entities */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -178,6 +204,22 @@
 				C31932E72A3367D00042546B /* HomeClient.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		C31932E92A336FA30042546B /* DataMapping */ = {
+			isa = PBXGroup;
+			children = (
+				C31932EA2A336FBE0042546B /* ProductListDTO.swift */,
+			);
+			path = DataMapping;
+			sourceTree = "<group>";
+		};
+		C31932EE2A336FFC0042546B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C31932EF2A3370080042546B /* ProductList.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		C373C1242A32078B00C1D782 = {
@@ -385,6 +427,74 @@
 			path = Favourite;
 			sourceTree = "<group>";
 		};
+		C3BB30F82A33734700C4E599 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				C3BB30FB2A33734700C4E599 /* HomeRepo.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C3BB31032A33739C00C4E599 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				C3BB31082A33739C00C4E599 /* DefaultHomeRepo.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C3BB310E2A3374F800C4E599 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				C3BB310F2A3374F800C4E599 /* Home */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		C3BB310F2A3374F800C4E599 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C3BB31102A3374F800C4E599 /* GetProductListUsecase.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C3BB314A2A33873900C4E599 /* LCDB */ = {
+			isa = PBXGroup;
+			children = (
+				C3BB31512A339A3600C4E599 /* LDBHandeler */,
+				C3BB314E2A33877D00C4E599 /* DataMapping */,
+			);
+			path = LCDB;
+			sourceTree = "<group>";
+		};
+		C3BB314B2A33874300C4E599 /* Apis */ = {
+			isa = PBXGroup;
+			children = (
+				C3BB31032A33739C00C4E599 /* Repositories */,
+				C31932E92A336FA30042546B /* DataMapping */,
+				C31932DC2A33670E0042546B /* Network */,
+			);
+			path = Apis;
+			sourceTree = "<group>";
+		};
+		C3BB314E2A33877D00C4E599 /* DataMapping */ = {
+			isa = PBXGroup;
+			children = (
+				C3BB314C2A33877600C4E599 /* ProductListLDB.swift */,
+				C3BB314F2A3387A800C4E599 /* ProductLDB.swift */,
+			);
+			path = DataMapping;
+			sourceTree = "<group>";
+		};
+		C3BB31512A339A3600C4E599 /* LDBHandeler */ = {
+			isa = PBXGroup;
+			children = (
+				C3BB31542A339B7900C4E599 /* ProductListLDBCLient.swift */,
+			);
+			path = LDBHandeler;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -406,6 +516,9 @@
 				C38D8DAD2A334BC700F0A786 /* RxCocoa */,
 				C38D8DAF2A334BC700F0A786 /* RxSwift */,
 				C38D8DC32A334DF000F0A786 /* MBProgressHUD */,
+				C3BB31412A337BE300C4E599 /* Kingfisher */,
+				C3BB31462A3386B900C4E599 /* Realm */,
+				C3BB31482A3386B900C4E599 /* RealmSwift */,
 			);
 			productName = "KSI-Task";
 			productReference = C373C12D2A32078B00C1D782 /* KSI-Task.app */;
@@ -439,6 +552,8 @@
 				C38D8DA92A334BA800F0A786 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				C38D8DAC2A334BC700F0A786 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				C38D8DC22A334DF000F0A786 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+				C3BB31402A337BE300C4E599 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				C3BB31452A3386B900C4E599 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 			);
 			productRefGroup = C373C12E2A32078B00C1D782 /* Products */;
 			projectDirPath = "";
@@ -489,11 +604,14 @@
 				C31932E82A3367D00042546B /* HomeClient.swift in Sources */,
 				C38D8DBE2A334C3A00F0A786 /* UIView_Ext.swift in Sources */,
 				C38D8DBA2A334C3A00F0A786 /* UITextField_ext.swift in Sources */,
-				C31932E02A33670F0042546B /* RequestProtocol.swift in Sources */,
+				C3BB31442A337FC300C4E599 /* TargetProtocol.swift in Sources */,
+				C31932F02A3370080042546B /* ProductList.swift in Sources */,
 				C373C1A62A3209DB00C1D782 /* BaseWireFrame.swift in Sources */,
+				C3BB312A2A3374F800C4E599 /* GetProductListUsecase.swift in Sources */,
 				C38D8DD92A334F8300F0A786 /* ProfileVCViewModel.swift in Sources */,
 				C38D8DE72A33508500F0A786 /* FavouriteVCViewModel.swift in Sources */,
 				C38D8DDC2A334FDD00F0A786 /* CartVCViewModel.swift in Sources */,
+				C31932EB2A336FBE0042546B /* ProductListDTO.swift in Sources */,
 				C38D8DBD2A334C3A00F0A786 /* UIviewController_Ext.swift in Sources */,
 				C38D8DBC2A334C3A00F0A786 /* UICollectionView_Ext.swift in Sources */,
 				C38D8DBF2A334C3A00F0A786 /* UIButton_Ext.swift in Sources */,
@@ -504,9 +622,14 @@
 				C31932E62A3367C50042546B /* HomeRouter.swift in Sources */,
 				C38D8DC12A334C3A00F0A786 /* UIColor_Ext.swift in Sources */,
 				C38D8DA82A334A8B00F0A786 /* MainTabBarVC.swift in Sources */,
+				C3BB31552A339B7900C4E599 /* ProductListLDBCLient.swift in Sources */,
+				C3BB310D2A33739C00C4E599 /* DefaultHomeRepo.swift in Sources */,
 				C31932E12A33670F0042546B /* RequestClient.swift in Sources */,
+				C3BB31502A3387A800C4E599 /* ProductLDB.swift in Sources */,
 				C373C1A52A3209DB00C1D782 /* Navigator.swift in Sources */,
 				C38D8DD12A334F4200F0A786 /* MenuVC.swift in Sources */,
+				C3BB31002A33734700C4E599 /* HomeRepo.swift in Sources */,
+				C3BB314D2A33877600C4E599 /* ProductListLDB.swift in Sources */,
 				C373C1312A32078B00C1D782 /* AppDelegate.swift in Sources */,
 				C373C1802A3209DB00C1D782 /* MainNavigator.swift in Sources */,
 				C38D8DC82A334E8700F0A786 /* HomeVC.swift in Sources */,
@@ -745,6 +868,22 @@
 				minimumVersion = 1.2.0;
 			};
 		};
+		C3BB31402A337BE300C4E599 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		C3BB31452A3386B900C4E599 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.15.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -767,6 +906,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C38D8DC22A334DF000F0A786 /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
 			productName = MBProgressHUD;
+		};
+		C3BB31412A337BE300C4E599 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3BB31402A337BE300C4E599 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		C3BB31462A3386B900C4E599 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3BB31452A3386B900C4E599 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		C3BB31482A3386B900C4E599 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3BB31452A3386B900C4E599 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

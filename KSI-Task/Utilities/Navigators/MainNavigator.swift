@@ -26,7 +26,7 @@ class MainNavigator:Navigator{
     func viewController(for destination: Destination) -> UIViewController {
         switch destination{
         case .home:
-            let viewModel = HomeVCViewModel()
+            let viewModel = HomeVCViewModel(getProductListUsecase: DefaultGetProductListUsecase(homeRepo: DefaultHomeRepo()))
             return HomeVC(viewModel: viewModel, coordinator: coordinator)
         case .menu:
             let viewModel = MenuVCViewModel()

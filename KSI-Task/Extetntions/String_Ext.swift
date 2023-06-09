@@ -8,7 +8,7 @@
 import Foundation
 extension String {
    
-
+ 
         func isValidEmail() -> Bool {
              //guard email != nil else { return false }
             let emailRegEx = "(?:[\\p{L}0-9!#$%\\&'*+/=?\\^_`{|}~-]+(?:\\.[\\p{L}0-9!#$%\\&'*+/=?\\^_`{|}" +

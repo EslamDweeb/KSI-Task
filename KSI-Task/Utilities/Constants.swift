@@ -35,7 +35,7 @@ enum EmptyFieldsErrorMessage:String {
 }
 
 enum Constants:String{
-    case baseUrl        = "https://wkalat.app/api"
+    case baseUrl        = "https://run.mocky.io/v3"
     case acceptType     = "Accept"
     case acceptLang     = "Accept-Language"
     case contentType    = "Content-Type"
