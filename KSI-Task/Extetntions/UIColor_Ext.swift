@@ -12,7 +12,15 @@ extension UIColor {
     @nonobjc class var lavenderPurple: UIColor {
         return UIColor(named: "lavender purple")!
     }
-
+    @nonobjc class var MediumGray:UIColor {
+        return UIColor(named: "Medium gray")!
+    }
+    @nonobjc class var Gray6:UIColor {
+        return UIColor(named: "Gray6")!
+    }
+    @nonobjc class var DarkGray:UIColor {
+        return UIColor(named: "DarkGray")!
+    }
     convenience init?(hex: String, alpha: CGFloat = 1.0) {
         var hexValue = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
         if hexValue.hasPrefix("#") {

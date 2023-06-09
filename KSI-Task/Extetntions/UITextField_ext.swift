@@ -37,11 +37,6 @@ import UIKit
         self.borderWidth = borderWidth
         self.cornerRadius = cornerRaduis
     }
-    func configureVerificationCodeText(){
-        self.font = Fonts.bold(name: FontName.Grold.rawValue, size: 42)
-        self.textColor = .white
-        self.attributedPlaceholder = NSAttributedString(string: self.placeholder != nil ?  self.placeholder! : "", attributes:[NSAttributedString.Key.foregroundColor: UIColor.white.withAlphaComponent(0.35)])
-    }
 }
 
 

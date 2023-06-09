@@ -71,5 +71,5 @@ enum SortFilterType {
 
 enum FontName:String {
     case Inter
-    case Grold
+    case Montserrat
 }

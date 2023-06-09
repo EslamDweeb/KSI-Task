@@ -16,6 +16,8 @@ class Fonts {
         case Bold(String)
         case SemiBold(String)
         case Medium(String)
+        case Thin(String)
+        case ExtraBold(String)
     }
     
     private static func customFont(font: FontName, size: CGFloat) -> UIFont {
@@ -32,6 +34,10 @@ class Fonts {
             fontName = name + "-SemiBold" // 600
         case .Medium(let name):
             fontName = name + "-Medium" // 500
+        case .Thin(let name):
+            fontName = name + "-Thin" // 100
+        case .ExtraBold(let name):
+            fontName = name + "-ExtraBold" // 800
         }
         
         guard let customFont = UIFont(name: fontName, size: size) else {
