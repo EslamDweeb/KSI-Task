@@ -21,6 +21,9 @@ extension UIColor {
     @nonobjc class var DarkGray:UIColor {
         return UIColor(named: "DarkGray")!
     }
+    @nonobjc class var Gray2:UIColor {
+        return UIColor(named: "Gray2")!
+    }
     convenience init?(hex: String, alpha: CGFloat = 1.0) {
         var hexValue = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
         if hexValue.hasPrefix("#") {

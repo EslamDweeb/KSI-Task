@@ -9,4 +9,5 @@ import Foundation
 
 protocol HomeRepo {
     func getProductList( _ completion:@escaping(_ success:ProductList?,_ error:String?) ->Void)
+    func addFaveorite(id:String,_ completion:@escaping(_ success:ProductList?,_ error:String?) ->Void)
 }
