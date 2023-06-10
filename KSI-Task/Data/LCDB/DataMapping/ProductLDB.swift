@@ -20,10 +20,11 @@ class ProductLDB: Object {
     @Persisted var category: String
     @Persisted var thumbnail: String
     @Persisted var images: RealmSwift.List<String>
-    
+    @Persisted var isFavourite:Bool = false
     @Persisted(originProperty: "products") var productList :LinkingObjects<ProductListLDB>
     
-    init( title: String, descriptions: String, price: Int, discountPercentage: Double, rating: Double, stock: Int, brand: String, category: String, thumbnail: String, images: RealmSwift.List<String>) {
+   convenience init( title: String, descriptions: String, price: Int, discountPercentage: Double, rating: Double, stock: Int, brand: String, category: String, thumbnail: String, images: RealmSwift.List<String>) {
+        self.init()
         self.title = title
         self.descriptions = descriptions
         self.price = price
@@ -35,5 +36,12 @@ class ProductLDB: Object {
         self.thumbnail = thumbnail
         self.images = images
     }
+    func setImagesFromArr(_ arr:[String]){
+        images.append(objectsIn: arr)
+    }
 }
-
+extension ProductLDB {
+    func toDomain()->Product {
+        return .init(id:_id.stringValue, name: title, description: descriptions, price: price, thumbnail: thumbnail, isFav: isFavourite)
+    }
+}

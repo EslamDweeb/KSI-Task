@@ -17,6 +17,7 @@ class MainNavigator:Navigator{
         case favourite
         case cart
         case profile
+        case productDetails(id:String)
     }
     
     required init(coordinator: Coordinator) {
@@ -26,7 +27,7 @@ class MainNavigator:Navigator{
     func viewController(for destination: Destination) -> UIViewController {
         switch destination{
         case .home:
-            let viewModel = HomeVCViewModel(getProductListUsecase: DefaultGetProductListUsecase(homeRepo: DefaultHomeRepo()))
+            let viewModel = HomeVCViewModel(getProductListUsecase: DefaultGetProductListUsecase(homeRepo: DefaultHomeRepo(productListLDBCLient: ProductListLDBCLient.shared)),productItemFavUsecase: DefaultProductItemFavUsecase(homeRepo: DefaultHomeRepo(productListLDBCLient: ProductListLDBCLient.shared)))
             return HomeVC(viewModel: viewModel, coordinator: coordinator)
         case .menu:
             let viewModel = MenuVCViewModel()
@@ -37,6 +38,9 @@ class MainNavigator:Navigator{
         case .cart:
             let viewModel = CartVCViewModel()
             return CartVC(viewModel: viewModel, coordinator: coordinator)
+        case .productDetails(let id):
+            let viewModel = ProductDetailsVCVieModel(id: id,repo: DefaultProductDetailsRepo(productListLDBCLient: ProductListLDBCLient.shared))
+            return ProductDetailsVC(viewModel: viewModel, coordinator: coordinator)
         case .profile:
             let viewModel = ProfileVCViewModel()
             return ProfileVC(viewModel: viewModel, coordinator: coordinator)

@@ -12,9 +12,10 @@ struct ProductList {
     let total, skip, limit: Int
 }
 struct Product {
-    let id:Int
+    let id:String
     let name:String
     let description: String
     let price: Int
     let thumbnail: String
+    let isFav:Bool
 }
